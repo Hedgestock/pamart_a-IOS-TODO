@@ -12,9 +12,11 @@ class ToDoItem {
     var itemName:String
     var completed:Bool
     var creationDate:Date
+    var color:UIColor
     init(itemName:String) {
         self.itemName = itemName
         completed = false
         creationDate = Date()
+        color = .white
     }
 }
