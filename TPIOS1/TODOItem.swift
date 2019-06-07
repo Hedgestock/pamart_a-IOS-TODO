@@ -13,10 +13,10 @@ class ToDoItem {
     var completed:Bool
     var creationDate:Date
     var color:UIColor
-    init(itemName:String) {
+    init(itemName:String, color:UIColor) {
         self.itemName = itemName
         completed = false
         creationDate = Date()
-        color = .white
+        self.color = color
     }
 }
