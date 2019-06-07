@@ -128,6 +128,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Todo List" id="ucP-St-Oyp">
+                        <barButtonItem key="leftBarButtonItem" title="edit" id="nO2-vU-niQ">
+                            <connections>
+                                <action selector="setEdit:" destination="ARE-t1-4rI" id="tIm-6G-X5v"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="NU0-HP-YJD">
                             <connections>
                                 <segue destination="Q0j-Rq-1Ny" kind="presentation" id="7mA-Fq-Ynw"/>
