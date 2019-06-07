@@ -51,7 +51,7 @@ class TODOListTableViewController: UITableViewController {
         if indexPath.row < toDoItems.count {
             let todoItem = toDoItems[indexPath.row]
             cell.textLabel?.text = todoItem.itemName
-            cell.backgroundColor = .blue
+            cell.backgroundColor = todoItem.color
             if todoItem.completed {
                 cell.accessoryType = .checkmark
             }
