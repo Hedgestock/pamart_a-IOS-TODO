@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C77621B228F3F7800D9425D /* TODOListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77621A228F3F7800D9425D /* TODOListTableViewController.swift */; };
+		4C77621B228F3F7800D9425D /* TODOListTableViewController in Sources */ = {isa = PBXBuildFile; fileRef = 4C77621A228F3F7800D9425D /* TODOListTableViewController */; };
 		4C77621D228F435E00D9425D /* TODOItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77621C228F435E00D9425D /* TODOItem.swift */; };
+		4C9CEF3B22AEA088008E3100 /* EditTodoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CEF3A22AEA088008E3100 /* EditTodoItemViewController.swift */; };
+		4C9CEF3D22AEA65C008E3100 /* EditTuc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CEF3C22AEA65C008E3100 /* EditTuc.swift */; };
 		4CDA80002285EAE00054FC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA7FFF2285EAE00054FC93 /* AppDelegate.swift */; };
 		4CDA80022285EAE00054FC93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA80012285EAE00054FC93 /* ViewController.swift */; };
 		4CDA80052285EAE00054FC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA80032285EAE00054FC93 /* Main.storyboard */; };
@@ -18,8 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C77621A228F3F7800D9425D /* TODOListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListTableViewController.swift; sourceTree = "<group>"; };
+		4C77621A228F3F7800D9425D /* TODOListTableViewController */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODOListTableViewController; sourceTree = "<group>"; };
 		4C77621C228F435E00D9425D /* TODOItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOItem.swift; sourceTree = "<group>"; };
+		4C9CEF3A22AEA088008E3100 /* EditTodoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoItemViewController.swift; sourceTree = "<group>"; };
+		4C9CEF3C22AEA65C008E3100 /* EditTuc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTuc.swift; sourceTree = "<group>"; };
 		4CDA7FFC2285EAE00054FC93 /* TPIOS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPIOS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDA7FFF2285EAE00054FC93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CDA80012285EAE00054FC93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +68,10 @@
 				4CDA7FFF2285EAE00054FC93 /* AppDelegate.swift */,
 				4CDA80012285EAE00054FC93 /* ViewController.swift */,
 				4CDA80032285EAE00054FC93 /* Main.storyboard */,
+				4C9CEF3A22AEA088008E3100 /* EditTodoItemViewController.swift */,
 				4C77621C228F435E00D9425D /* TODOItem.swift */,
-				4C77621A228F3F7800D9425D /* TODOListTableViewController.swift */,
+				4C9CEF3C22AEA65C008E3100 /* EditTuc.swift */,
+				4C77621A228F3F7800D9425D /* TODOListTableViewController */,
 				4CDA80062285EAE20054FC93 /* Assets.xcassets */,
 				4CDA80082285EAE20054FC93 /* LaunchScreen.storyboard */,
 				4CDA800B2285EAE20054FC93 /* Info.plist */,
@@ -144,11 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9CEF3B22AEA088008E3100 /* EditTodoItemViewController.swift in Sources */,
 				4CDA80022285EAE00054FC93 /* ViewController.swift in Sources */,
 				4CDA80002285EAE00054FC93 /* AppDelegate.swift in Sources */,
 				4CDA80122285FC590054FC93 /* AddTodoItemViewController.swift in Sources */,
 				4C77621D228F435E00D9425D /* TODOItem.swift in Sources */,
-				4C77621B228F3F7800D9425D /* TODOListTableViewController.swift in Sources */,
+				4C77621B228F3F7800D9425D /* TODOListTableViewController in Sources */,
+				4C9CEF3D22AEA65C008E3100 /* EditTuc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,6 +42,13 @@ class TODOListTableViewController: UITableViewController {
                 toDoItems.append(item)
                 tableView.reloadData()
             }
+        } else if let source = segue.source as? EditTodoItemViewController {
+            if let item = source.todoItem {
+                if let i = source.currIndex {
+                    toDoItems[i.row] = item
+                    tableView.reloadData()
+                }
+            }
         }
     }
 
@@ -67,8 +74,10 @@ class TODOListTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: false)
         if indexPath.row < toDoItems.count {
             let todoItem = toDoItems[indexPath.row]
-            todoItem.completed = !todoItem.completed
-            tableView.reloadRows(at: [indexPath], with: .none)
+            //todoItem.completed = !todoItem.completed
+            let etim = EditTuc(index: indexPath, item: todoItem)
+            performSegue(withIdentifier: "EDIT", sender: etim)
+            //tableView.reloadRows(at: [indexPath], with: .none)
         }
     }
     /*
@@ -107,14 +116,20 @@ class TODOListTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let wc = segue.destination as? UINavigationController {
+            if let Ewc = wc.viewControllers.first as? EditTodoItemViewController {
+                if let todo = sender as? EditTuc {
+                    Ewc.index = todo.index
+                    Ewc.todoItem = todo.item
+                }
+            }
+        }
     }
-    */
 
 }

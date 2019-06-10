@@ -65,6 +65,53 @@
             </objects>
             <point key="canvasLocation" x="3766.666666666667" y="125.22321428571428"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aJM-Ux-4gr">
+            <objects>
+                <navigationController id="7XY-LA-3LP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1v-1A-AuJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vfB-hv-yF1" kind="relationship" relationship="rootViewController" id="ViI-eP-0H2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKZ-aZ-Mx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="813"/>
+        </scene>
+        <!--Edit Todo Item View Controller-->
+        <scene sceneID="X9Y-AJ-IeF">
+            <objects>
+                <viewController id="vfB-hv-yF1" customClass="EditTodoItemViewController" customModule="TPIOS1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c02-dj-EF1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-sP-oQd">
+                                <rect key="frame" x="159" y="149" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="R77-4c-j1C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W6G-ij-53S">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="wGI-X7-Lol"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="EsL-VT-jFn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TodoItemName" destination="0C5-sP-oQd" id="ZRz-CB-4GO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imm-j0-wiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3767" y="813"/>
+        </scene>
         <!--Todo List-->
         <scene sceneID="Y2G-5A-UA6">
             <objects>
@@ -144,6 +191,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="7XY-LA-3LP" kind="show" identifier="EDIT" id="cHm-gv-iNg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ld0-5o-IcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
