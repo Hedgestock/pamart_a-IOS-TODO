@@ -125,7 +125,7 @@ class TODOListTableViewController: UITableViewController {
         if let wc = segue.destination as? UINavigationController {
             if let Ewc = wc.viewControllers.first as? EditTodoItemViewController {
                 if let todo = sender as? EditTuc {
-                    Ewc.index = todo.index
+                    Ewc.currIndex = todo.index
                     Ewc.todoItem = todo.item
                 }
             }

@@ -11,7 +11,6 @@ import UIKit
 class EditTodoItemViewController: UIViewController {
 
     @IBOutlet weak var TodoItemName: UITextField!
-    @IBOutlet weak var CancelButton: UIBarButtonItem!
     @IBOutlet weak var DoneButton: UIBarButtonItem!
     var todoItem: ToDoItem?
     var currIndex: IndexPath?

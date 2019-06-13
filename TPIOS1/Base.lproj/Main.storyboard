@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1lm-Of-bmH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1lm-Of-bmH">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -101,14 +101,24 @@
                         <viewLayoutGuide key="safeArea" id="R77-4c-j1C"/>
                     </view>
                     <navigationItem key="navigationItem" id="W6G-ij-53S">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="wGI-X7-Lol"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="EsL-VT-jFn"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="wGI-X7-Lol">
+                            <connections>
+                                <segue destination="Atc-uB-BKz" kind="unwind" unwindAction="unwindToList:" id="o85-6b-9P1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="EsL-VT-jFn">
+                            <connections>
+                                <segue destination="Atc-uB-BKz" kind="unwind" unwindAction="unwindToList:" id="HEV-RG-rdd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="DoneButton" destination="EsL-VT-jFn" id="IFv-kd-gZE"/>
                         <outlet property="TodoItemName" destination="0C5-sP-oQd" id="ZRz-CB-4GO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imm-j0-wiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Atc-uB-BKz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3767" y="813"/>
         </scene>
