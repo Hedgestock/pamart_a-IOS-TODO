@@ -48,7 +48,6 @@
 		4CDA7FF32285EAE00054FC93 = {
 			isa = PBXGroup;
 			children = (
-				4CDA80112285FC590054FC93 /* AddTodoItemViewController.swift */,
 				4CDA7FFE2285EAE00054FC93 /* TPIOS1 */,
 				4CDA7FFD2285EAE00054FC93 /* Products */,
 			);
@@ -65,6 +64,7 @@
 		4CDA7FFE2285EAE00054FC93 /* TPIOS1 */ = {
 			isa = PBXGroup;
 			children = (
+				4CDA80112285FC590054FC93 /* AddTodoItemViewController.swift */,
 				4CDA7FFF2285EAE00054FC93 /* AppDelegate.swift */,
 				4CDA80012285EAE00054FC93 /* ViewController.swift */,
 				4CDA80032285EAE00054FC93 /* Main.storyboard */,

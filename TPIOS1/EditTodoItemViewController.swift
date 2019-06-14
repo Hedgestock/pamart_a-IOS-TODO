@@ -12,6 +12,8 @@ class EditTodoItemViewController: UIViewController {
 
     @IBOutlet weak var TodoItemName: UITextField!
     @IBOutlet weak var DoneButton: UIBarButtonItem!
+    @IBOutlet weak var completeSwitch: UISwitch!
+    
     var todoItem: ToDoItem?
     var currIndex: IndexPath?
     
@@ -19,12 +21,11 @@ class EditTodoItemViewController: UIViewController {
         super.viewDidLoad()
 
         TodoItemName.text = todoItem?.itemName
-        
+        completeSwitch.isOn = todoItem?.completed ?? false
         
         // Do any additional setup after loading the view.
     }
     
-
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -33,7 +34,8 @@ class EditTodoItemViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if let sender = sender as? UIBarButtonItem, sender == DoneButton {
             if let text = TodoItemName.text, text.count > 0 {
-                todoItem?.itemName = text;
+                todoItem?.itemName = text
+                todoItem?.completed = completeSwitch.isOn
             }
         }
     }

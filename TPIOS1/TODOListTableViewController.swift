@@ -74,10 +74,8 @@ class TODOListTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: false)
         if indexPath.row < toDoItems.count {
             let todoItem = toDoItems[indexPath.row]
-            //todoItem.completed = !todoItem.completed
             let etim = EditTuc(index: indexPath, item: todoItem)
             performSegue(withIdentifier: "EDIT", sender: etim)
-            //tableView.reloadRows(at: [indexPath], with: .none)
         }
     }
     /*
